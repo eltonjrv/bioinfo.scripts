@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 ###########################################################################
-# Programador: Elton J R Vasconcelos (21/11/05)
-# A program that creates fasta Files for genes that you're searching within a genome
+# Programador: Elton J R Vasconcelos (21/Nov/2005)
+# A program that creates individual fasta files for patterns that you're searching within the sequences' headers
 ###########################################################################
 
 # usage: GeneSearcher.pl gene_name db-fasta_format
@@ -16,7 +16,7 @@ my $opt_help = 0;  #parametro --help
 
 my $result = GetOptions("help"   =>  \$opt_help);
 
-# Caso argumento seja "--help" ou não passou argumento necessario 
+# Caso argumento seja "--help" ou nÃ£o passou argumento necessario 
 pod2usage({-exitval => 0, -verbose => 2}) if $opt_help; 
 
 my $input1;
