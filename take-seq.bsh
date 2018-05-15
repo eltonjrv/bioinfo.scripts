@@ -1,0 +1,5 @@
+#!/bin/bash
+#Script que pega sequencias especificas de um arquivo FASTA
+#Programador: Elton Vasconcelos e Ricardo Vencio (26.04.2010)
+#usage: ./take-seq.bsh [nome-do-FASTA] [nome-da-seq]
+wc -l $1 | grep $2 -A `cut -d \  -f 1` $1 | grep '>' -n -m 2 | tail -n 1 | grep $2 -A $((`cut -d \: -f 1` - 2)) $1
