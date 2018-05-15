@@ -1,9 +1,9 @@
 #/usr/bin/perl -w
 #Programmer: Elton Vasconcelos (26.04.2011)
-# script escrito para gerar um fasta de motifs encontrados nos arquivos de saida do MEME
+# script that generates a FASTA file of motifs present within the MEME default output
 # Usage: perl taking-multiple-MEMEmotifs.pl
-# Os motifs devem estar dentro dos arquivos meme.txt que, por sua vez, estao dentro dos diretorios *validating*
-# se fos diretorios tiverem outro padrao de nomenclatura, deve-se alterar a linha 7.
+# Motifs must be in meme.txt files, which is withn diretorios *validating directories
+# Please edit line 8 if your directories have other nomenclature pattern
 
 foreach my $contigDIR ( <*validating> ) {
     if (-d $contigDIR) {
