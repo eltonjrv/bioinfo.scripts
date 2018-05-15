@@ -1,2 +1,2 @@
-# bionfo.PERLscripts
-ad hoc PERL scripts for use in bioinformatics tasks
+# bioinfo.scripts
+ad hoc (mostly PERL) scripts for usage in bioinformatics tasks
