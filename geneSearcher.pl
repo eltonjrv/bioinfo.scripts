@@ -2,7 +2,7 @@
 ###########################################################################
 # Programmer: Elton J R Vasconcelos (21/Nov/2005)
 # A program that creates individual fasta files for patterns that you're searching within the sequences' headers
-# Usage: perl GeneSearcher.pl [one_or_two_word(s)_search] [DB-file.fasta]
+# Usage: perl geneSearcher.pl [one_or_two_word(s)_search] [DB-file.fasta]
 ###########################################################################
 
 # usage: GeneSearcher.pl gene_name db-fasta_format
