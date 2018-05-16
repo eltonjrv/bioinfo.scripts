@@ -21,9 +21,9 @@ my %hash;
 
 while ($line2 ne "") {
     if ($line2 =~ m/^>/) {
-        $chr = $&;                
+        $chr = $line2;                
         $chr =~  s/^>//;
-        $chr =~  s/ .*//;              #catching only the first word (ID) of the header
+        $chr =~  s/ .*//;              #catching only the first word (ID) of the header (e.g. chr_ID if it is a whole genome FASTA)
         $line2 = <FILE2>;
         chomp($line2);
         until ($line2 =~ m/^>/ || $line2 eq "") {             
