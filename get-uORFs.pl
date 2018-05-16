@@ -13,10 +13,6 @@
 #See spreadsheets within the dir:
 #/nearline/ngs/projects/RibosomeProfiling/Analysis_V5.0/Genomes/ForATGcuration
 
-#if (@ARGV != 5) {
-#die ("**Error**\nThe cmd line must contain 5 arguments:\n\$perl tab2fasta-Leish-v2.pl [file1.tab] [Leish-WG.fasta] [col#_file1_chrID] [col#_file1_coord1] [col#_file1_coord2]\nRead script's initial commented lines for a better explanation\n");
-#}
-
 ########################################################
 ######## Working with the Tb927-WG.fasta file ##########
 ########################################################
