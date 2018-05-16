@@ -1,6 +1,6 @@
 #!/usr/bin/perl 
 # Programmer: Elton Vasconcelos (02/Aug/2013)
-# Script that place the entire sequence in one single line in each sequence inside the FASTA file
+# Script that places the entire sequence in one single line in each sequence inside the FASTA file
 # Usage: perl fasta-single-line.pl [infile.fasta] >outfile.fasta
 #################################################################################################
 
