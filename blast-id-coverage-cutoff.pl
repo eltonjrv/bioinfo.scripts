@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # Programmer: Elton Vasconcelos (13.04.2011)
 # Script that filters BlastHits by cutoffs of %id and alignment length (coverage) established by the user
-# Usage: perl blast-id-coverage-cutoff.pl [Blast-output] [Blast2Table.pl-output] [threshold for %id, integer 1-100] [fraction of coverage, fraction 0.n - 1] >outfile
+# Usage: perl blast-id-coverage-cutoff.pl [Blast-output] [Blast-tabular-output] [threshold for %id, integer 1-100] [fraction of coverage, fraction 0.n - 1] >outfile
 
 open (FILE1, "$ARGV[0]") or die ("Can't open $ARGV[0]\n");
 my $line1 = <FILE1>;
