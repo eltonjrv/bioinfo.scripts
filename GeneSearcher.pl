@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 ###########################################################################
-# Programador: Elton J R Vasconcelos (21/Nov/2005)
+# Programmer: Elton J R Vasconcelos (21/Nov/2005)
 # A program that creates individual fasta files for patterns that you're searching within the sequences' headers
+# Usage: perl GeneSearcher.pl [one_or_two_word(s)_search] [DB-file.fasta]
 ###########################################################################
 
 # usage: GeneSearcher.pl gene_name db-fasta_format
@@ -134,7 +135,7 @@ This is a script that creates FASTA file containing genes or proteins that you a
 
 =head1 BUGS
 
-Please report them to Elton Vasconcelos <eltonjrv@rbp.fmrp.usp.br>
+Please report them to Elton Vasconcelos <eltonjrv@gmail.com>
 
 =cut
 
