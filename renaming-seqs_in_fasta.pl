@@ -1,8 +1,10 @@
 #!/usr/bin/perl
 ## Programmer: Elton Vasconcelos (23/Jan/2017)
 ## Usage: perl renaming-seqs.pl [fasta_extension] 
+##################################################
 # Script that will rename the sequences within a fasta file by the file's name plus a numerical autoincrement
-# The user must inform, as the first argument of the script, the extension of the fasta files within the current directory (e.g. fa, fas, fasta, fna, etc)
+# One must inform, as the first argument of the script, the extension of the fasta file(s) within the current directory (e.g. fa, fas, fasta, fna, etc)
+# Output(s) will be named *-nn.[your_fasta_extension_typed_as_first_argument]
 
 if (@ARGV != 1) { die ("The user must inform, as the only argument of the script, the extension of the fasta files within the current directory (e.g. fa, fas, fasta, fna, etc...)");}
 
