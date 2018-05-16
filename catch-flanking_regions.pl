@@ -1,11 +1,10 @@
 #!/usr/bin/perl 
 # Programmer: Elton Vasconcelos (24/Jun/2014)
-# Script that takes the specified flanking sequence of each annotated feature on the input gff file
+# Script that takes the user-specified flanking sequences length from each annotated feature in a gff file
 # Usage: perl catch-flanking_regions.pl [infile.gff] [up or down] [number of nt] [WholeGenome.fasta] >output.fasta
 #################################################################################################
-#if ($ARGV[1] !~ m/^up/ || $ARGV[1] !~ m/^down/) {
-#    die ("You must type either [up] or [down] as your second argument \(without brackets\).\n");
-#}
+# NOTE: You must type either "up" or "down" as the second argument in order to retrieve either upstream or downstream flanking sequences.
+# If you want both (up and down), so run the script twice.
 if ($ARGV[2] !~ m/^\d/) {
     die ("You must type an integer as your third argument \(number of nucleotides of your desired flanking sequences to be caught\).\n");
 }
