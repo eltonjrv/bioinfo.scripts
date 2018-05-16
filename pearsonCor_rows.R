@@ -1,7 +1,7 @@
 # R script
 # Programmer: Elton Vasconcelos (20/May/2013)
 # Script that calculates the Pearson Correlation Coefficient between all combinations of pairs of rows in a table.
-# USAGE: Rscript pearsonCor_rows_pairwise.R [tabular_file]
+# USAGE: Rscript pearsonCor_rows.R [tabular_file]
 ##############################################
 args <- commandArgs(TRUE)
 file = read.delim(args[1])
