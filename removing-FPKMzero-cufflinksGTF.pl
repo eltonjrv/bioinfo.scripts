@@ -1,6 +1,6 @@
 #!/usr/bin/perl 
 # Programmer: Elton Vasconcelos (28.Dec.2015)
-# Script that does not print features with FPKM = 0.0000000000 ib the transcripts.gtf cufflinks output file
+# Script that removes features with FPKM = 0.0000000000 in the transcripts.gtf cufflinks output file
 # Usage: perl removing-FPKMzero-cufflinksGTF.pl transcripts.gtf 1>outfile.gtf 2>FPKMzero.gtf
 #################################################################################################
 
