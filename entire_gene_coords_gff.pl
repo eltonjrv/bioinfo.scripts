@@ -1,10 +1,11 @@
 #!/usr/bin/perl
 # Programmer: Elton Vasconcelos 
-# Script that generates a line for the entire gene on a bed6-derived gff that contains only exons
+# Script that prints a line for the whole gene feature on a bed6-derived gff that contains only exons
+# It takes bed2gff.pl output as input
 # Usage: perl entire_gene_coords_gff.pl infile.gff >outfile.gff
 #################################################################################################
 # Script first run on verjo-server-01 within /media/misc/users/elton/tophat-SRA/
-# $ 
+
 
 open (INFILE, "$ARGV[0]") or die ("Can't open file $ARGV[0]!\n");
 my $line = <INFILE>;
