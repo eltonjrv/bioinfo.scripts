@@ -20,10 +20,10 @@ my $chr;
 my %hash;
 
 while ($line2 ne "") {
-    if ($line2 =~ m/^>[\w\d\._]+ /) {
-        $chr = $&;                #catching only the chr ID (i.e. LmjF.01)
+    if ($line2 =~ m/^>/) {
+        $chr = $&;                
         $chr =~  s/^>//;
-        $chr =~  s/ //;
+        $chr =~  s/ .*//;              #catching only the first word (ID) of the header
         $line2 = <FILE2>;
         chomp($line2);
         until ($line2 =~ m/^>/ || $line2 eq "") {             
