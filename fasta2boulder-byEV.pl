@@ -1,8 +1,9 @@
 #!/usr/bin/perl
 # Programmer: Elton Vasconcelos (27/Jun/2017)
-# Usage: perl fasta2boulder-byEV.pl primers.fasta >outfile.boulder
+# Usage: perl fasta2boulder-byEV.pl infile.fasta >outfile.boulder
 # Script that takes a FASTA file and generates a boulder format in order to be used as an input for primer3.
-
+########################################################################
+# NOTE: One must change/add parameters from line 32 on according to his/her needs.
 open(FILE, "$ARGV[0]") or die ("can't open $ARGV[0]!\n");
 my(%hash, @array, $F, $R, $seqID, $seq, $line);
 $line = <FILE>;
