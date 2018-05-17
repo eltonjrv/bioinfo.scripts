@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 # Programmer: Elton Vasconcelos (24/Mar/2017)
-# Usage: perl baseCount_perColumn.pl [aligned.fasta] >outfile.tab
+# Usage: perl baseCount_perMSAcolumn.pl [aligned.fasta] >outfile.tab
 #################################################################
-# The infile must be a multiple alignment in fasta format
-# The sequence content must be placed on one single line after the header of each sequence
+# The infile must be a multiple alignment in fasta format (easily obtained by running muscle)
+# The sequence content must be placed on one single line after the header of each sequence (easily obtained by running fasta-single-line.pl)
 
 my (@array, %hashA, %hashC, %hashG, %hashT);
 
