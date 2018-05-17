@@ -1,4 +1,4 @@
-# R script that calculates shannon entropy values for each column of a MSA
+# R script that calculates shannon entropy values for each column on a MSA
 # Programmer: Elton Vasconcelos (20/Apr/2017)
 # Usage: Rscript vegan_ntDiversity.R [output from baseCount_perMSAcolumn.pl script]
 #############################################################################
