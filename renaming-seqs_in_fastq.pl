@@ -1,8 +1,10 @@
 #!/usr/bin/perl
 ## Programmer: Elton Vasconcelos (25/Apr/2018)
 ## Usage: perl renaming-seqs_in_fastq.pl [fastq_extension] 
+##############################################################
 # Script that will rename the sequences within a fastq file by the file base name (initial string that comes before _1_L001_R[12]_001.fq) plus a numerical autoincrement
-# The user must inform, as the first argument of the script, the extension of the fasta files within the current directory (e.g. fa, fas, fasta, fna, etc)
+# The user must inform, as the first argument of the script, the extension of the fasta files within the current directory (e.g. fq, fastq, etc)
+# Output(s) will be named *-nn.[your_fastq_extension_typed_as_first_argument]
 
 if (@ARGV != 1) { die ("The user must inform, as the only argument of the script, the extension of the fasta files within the current directory (e.g. fa, fas, fasta, fna, etc...)");}
 
