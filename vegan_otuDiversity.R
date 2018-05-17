@@ -1,6 +1,6 @@
 # R script that calculates shannon entropy values for each OTU
 # Programmer: Elton Vasconcelos (20/Apr/2017)
-# Usage: Rscript vegan_ntDiversity.R [OTU_table]
+# Usage: Rscript vegan_ntDiversity.R [OTU_table-QIIME_format]
 #############################################################################
 library(vegan)
 args <- commandArgs(TRUE)
