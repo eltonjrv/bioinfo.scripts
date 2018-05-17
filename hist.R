@@ -1,0 +1,6 @@
+args <- commandArgs(TRUE)
+x = read.table(args[1])
+out = gsub("/.*", "_otus_bp_range.pdf", args[1])
+pdf(out)
+hist(x[,1], main = args[1], ylab = "# OTUs", xlab = "OTU Length (bp)", breaks = 100, col = "gray")
+dev.off()

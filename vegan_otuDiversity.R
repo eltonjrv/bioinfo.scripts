@@ -1,0 +1,6 @@
+library(vegan)
+args <- commandArgs(TRUE)
+x = read.table(args[1], row.names=1)
+y = t(x)
+ydiv = diversity(y)
+write.table(ydiv, file = "samples_diversity.tab", sep = "\t", quote = FALSE, col.names = FALSE)
