@@ -5,7 +5,7 @@
 # Usage: perl geneSearcher.pl [one_or_two_word(s)_search] [DB-file.fasta]
 ###########################################################################
 
-# usage: GeneSearcher.pl gene_name db-fasta_format
+# usage: geneSearcher.pl gene_name db-fasta_format
 use strict;
 use Getopt::Long;
 use Pod::Usage;
@@ -105,11 +105,11 @@ __END__
 
 =head1 NAME
 
-B<GeneSearcher.pl> 
+B<geneSearcher.pl> 
 
 =head1 SYNOPSIS
 
-usage: perl GeneSearcher.pl [one_or_two_word(s)_search] [DB-file.fasta]
+usage: perl geneSearcher.pl [one_or_two_word(s)_search] [DB-file.fasta]
 
 one_or_two_word_search = 1 or 2 word(s) presents in the information line of
 a sequence (after the '>' symbol) that you want to search in the DB
