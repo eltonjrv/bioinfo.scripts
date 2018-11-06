@@ -40,7 +40,3 @@ while ($line ne "") {
 }
 
 close(INFILE);
-
-
-
-
