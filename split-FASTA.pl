@@ -1,8 +1,8 @@
 #!/usr/bin/perl
-# Programador: Elton Vasconcelos (01.08.2012)
-# Script que separa um arquivo FASTA em "n" arquivos com "X" sequencias cada
-# "X" deve ser um numero inteiro definido pelo usuario
-# Usage: perl separa-FASTA.pl [infile] [integer]
+# Programmer: Elton Vasconcelos (01.Aug.2012)
+# Script that splits a FASTA file in "n" files containing "X" sequences each
+# "X" must be a user-defined integer (second argument in the cmd line)
+# Usage: perl split-FASTA.pl [infile] [integer]
 
 my $c = 1;
 my $X = $ARGV[1];
