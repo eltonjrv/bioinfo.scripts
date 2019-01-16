@@ -42,6 +42,6 @@ for ($i = 0; $i < @array; $i++) {
     print "PRIMER_PAIR_MAX_COMPL_END=2\n";
     print "PRIMER_MAX_SELF_ANY=4\n";   
     print "PRIMER_MAX_SELF_END=2\n";
-    print "PRIMER_THERMODYNAMIC_PARAMETERS_PATH=/home/elton/bioinformatics-tools/primer3-2.3.5/src/primer3_config\n";	#ATTENTION: Check primer3 installation directory in your system and replace the path accordingly!
+    print "PRIMER_THERMODYNAMIC_PARAMETERS_PATH=/home/elton/bioinformatics-tools/primer3-2.3.5/src/primer3_config/\n";	#ATTENTION: Check primer3 installation directory in your system and replace the path accordingly!
     print "=\n";
 }
