@@ -1,5 +1,5 @@
 # Programmer: Elton Vasconcelos (13/Oct/2015)
-# Usage: Rscript fisher_auto.R [GO.count] [number_of_genes_on_list]  [total_number_of_genes_with_GO]
+# Usage: Rscript fisher4GOenrichment.R [GO.count] [number_of_genes_on_list]  [total_number_of_genes_with_GO]
 ####################################################################################################
 ### The following is an input file example, where col2 is the number of genes on the list and col3 is the total number of genes assigned to the GO term on col1:
 #GO:0000166	2	61
