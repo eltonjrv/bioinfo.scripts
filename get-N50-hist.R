@@ -11,7 +11,7 @@ soma = 0
 ncontigs = length(x[,1])
 for (i in c(i:ncontigs)) { soma = soma+x[i,]; if ((soma / total) >= 0.5) {j=as.vector(c(i, soma)); print(j); break}  }
 
-### One must grab the i on the first print of j and type the following to catch the N50
+# Printing results
 cat("N50 = ", x[i,], "bp", "\n")
 cat("Total bases = ", total, "\n")
 pdf("histogram.pdf")
