@@ -23,3 +23,4 @@ while ($line ne "") {
     $line = <FILE>;
     chomp($line);
 }
+close(FILE);
