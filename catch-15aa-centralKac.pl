@@ -42,7 +42,7 @@ while (<FILE2>) {
 	   print(">$array[0]_$c\n$motifx_input\n");
 	}
 	elsif ($array[1] + 7 >= length($hash{$array[0]})) { 
-	   $pos_end = length($hash{$array[0]}) - 16;
+	   $pos_end = length($hash{$array[0]}) - 15;
 	   $motifx_input = substr($hash{$array[0]}, $pos_end, 15);
 	   print(">$array[0]_$c\n$motifx_input\n");
 	}
