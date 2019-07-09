@@ -2,7 +2,7 @@
 # Programmer: Elton Vasconcelos (08/Jul/2019)
 # Script that generates a fasta file containing 15aa-long sequences with an acetylated Lysin (Kac) placed in the middle (position 8 within the 15aa-long seq).
 # It can be further used as input file for Rmotifx (or any other motif finder algorithm).
-# Usage: perl catch-15aa-centralKac.pl [input1_proteins.fasta] [input2.tab]
+# Usage: perl catch-15aa-centralKac.pl [input1_proteins.fasta] [input2.tab] >outfile-15aa.fasta
 ############################################################################
 # NOTE: input2.tab must be a two-columns tabular file, where 1st column is for proteinID and 2nd one is for the position of the Kac residue within that protein sequence.
 # ATTENTION: Protein IDs from both input files MUST match!
