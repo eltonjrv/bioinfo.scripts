@@ -36,11 +36,11 @@ while ($line ne "") {
 }
 #################
 sub VerifyMatch {
- if($seq ne "") {                            #Verify whether the sequence is null
-    if($seq =~ m/$pattern/ig) {             #Search for the match on a case insensitive manner
-        my $match = $&;                           #Storage the match 
-        my $posF = pos($seq);                     #Storage the final position of the match
-        my $posI = $posF - length($match) + 1;    #Storage the start position os the match
+ if($seq ne "") {                                 #Verify whether the sequence is null
+    if($seq =~ m/$pattern/ig) {                   #Search for the match on a case insensitive manner
+        my $match = $&;                           #Store the match 
+        my $posF = pos($seq);                     #Store the final position of the match
+        my $posI = $posF - length($match) + 1;    #Store the start position of the match
         print("$headline\t$match\t$posI\t$posF\n");
     }
     else {
