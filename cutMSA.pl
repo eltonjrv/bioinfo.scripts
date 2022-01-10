@@ -51,8 +51,8 @@ while ($line ne "") {
 	   $seq =~ s/\-//g;	#removing the gaps
 	   last;
         }
-   $line = <FILE>;
-   chomp($line);
+   #$line = <FILE>;
+   #chomp($line);
 }
 
 if ($seq eq "") {
