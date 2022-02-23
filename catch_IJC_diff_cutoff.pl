@@ -1,7 +1,7 @@
 # Programmer: Elton Vasconcelos (22/02/2022)
 # Usage: perl catch_IJC_diff_cutoff.pl [ASE.MATS.JC.txt] [IJC_diff_cutoff]  >ASE.MATS.JC.filtered.tsv
 open(FILE, "$ARGV[0]") or die ("*** Error ***\nCan't find $ARGV[0]\nUsage: perl catch_IJC_diff_cutoff.pl [ASE.MATS.JC.txt] [IJC_diff_cutoff] >ASE.MATS.JC.filtered.tsv\n");
-if($ARGV[1] =~ m/^\D+/ || $ARGV[1] eq "") { die ("*** Error ***\nThe second argument must be an integer!\nUsage: perl catch_IJC_diff_cutoff.pl [ASE.MATS.JC.txt] [IJC_diff_cutoff] >ASE.MATS.JC.filtered.tsv\n");}
+if($ARGV[1] =~ m/^\D+/ || $ARGV[1] eq "") { die ("*** Error ***\nThe second argument must be numeric!\nUsage: perl catch_IJC_diff_cutoff.pl [ASE.MATS.JC.txt] [IJC_diff_cutoff] >ASE.MATS.JC.filtered.tsv\n");}
 while(<FILE>) {
 	chomp($_);
 	if($_ =~ m/^ID/) {
