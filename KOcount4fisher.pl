@@ -1,5 +1,5 @@
 #!/usr/bin/perl 
-# Programmer: Elton Vasconcelos (08/Mar/2016)
+# Programmer: Elton Vasconcelos (08/Mar/2022)
 # Usage: perl GOcount4fisher.pl [list_of_DiffExp_gene_ids.txt] [list_of_genes_and_their_respective_GOterms.tab] [number_of_DiffExp_genes_on_list]  [total_number_of_genes_with_GOterms]
 ################################################################################################################
 # Note 1: Both assign-GO2VGs.pl and fisher_auto.R scripts must exist in the current directory, and the machine must have R installed.
