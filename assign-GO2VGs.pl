@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# Programmer: Elton Vasconcelos (11.Apr.2016)
+# Programmer: Elton Vasconcelos (11.Apr.2022)
 # Usage: perl assign-GO2VGs.pl [file1] [file2] >table2validate.tab
 ##############################################################
 ##### Example of file1 (geneID must be on the 1st column)
