@@ -1,0 +1,33 @@
+library(maftools)
+cl = read.maf(maf="CL-noRSIDs-noGnomAD_opt2.maf")
+pdf("CL-MAFplots-no_rsID_gnomAD.pdf")
+plotmafSummary(maf = cl, rmOutlier = TRUE, addStat = 'median', dashboard = TRUE, titvRaw = FALSE)
+oncoplot(maf = cl, top = 10)
+cl.titv = titv(maf = cl, plot = FALSE, useSyn = TRUE)
+plotTiTv(res = cl.titv)
+dev.off()
+pdf("CL-lolliPlots-SuesGoIs-no_rsID_gnomAD.pdf")
+gois = read.table("GoIs.txt")
+for(i in 1:length(gois[,1])) { try(lollipopPlot(maf=cl, gene=gois[i,1], AACol='aaChange', showMutationRate=TRUE)) }
+dev.off()
+getwd()
+pd = read.maf(maf="PD-noRSIDs-noGnomAD_opt2.maf")
+pdf("PD-MAFplots-no_rsID_gnomAD.pdf")
+plotmafSummary(maf = pd, rmOutlier = TRUE, addStat = 'median', dashboard = TRUE, titvRaw = FALSE)
+oncoplot(maf = pd, top = 10)
+pd.titv = titv(maf = pd, plot = FALSE, useSyn = TRUE)
+plotTiTv(res = pd.titv)
+dev.off()
+for(i in 1:length(gois[,1])) { try(lollipopPlot(maf=pd, gene=gois[i,1], AACol='aaChange', showMutationRate=TRUE)) }
+dev.off()
+pdf("PD-lolliPlots-SuesGoIs-no_rsID_gnomAD.pdf")
+for(i in 1:length(gois[,1])) { try(lollipopPlot(maf=pd, gene=gois[i,1], AACol='aaChange', showMutationRate=TRUE)) }
+dev.off()
+top10CL = read.table("top10-CL.txt")
+top10PD = read.table("top10-PD.txt")
+pdf("top10-CL-lolliPlots-no_rsID_gnomAD.pdf")
+for(i in 1:length(top10CL[,1])) { try(lollipopPlot(maf=cl, gene=top10CL[i,1], AACol='aaChange', showMutationRate=TRUE)) }
+dev.off()
+pdf("top10-PD-lolliPlots-no_rsID_gnomAD.pdf")
+for(i in 1:length(top10PD[,1])) { try(lollipopPlot(maf=pd, gene=top10PD[i,1], AACol='aaChange', showMutationRate=TRUE)) }
+dev.off()
