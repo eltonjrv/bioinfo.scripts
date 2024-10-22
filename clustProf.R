@@ -1,7 +1,7 @@
 library(org.Hs.eg.db)
 library(clusterProfiler)
 args = commandArgs(TRUE)
-x = read.table(args[1], sep="\t")		#list of geneIDs (Hsap gene symbols type)
+x = read.table(args[1], sep="\t")		#The input file is a DESeq2 output table where Hsap gene symbols are on column 8 (must have a .xls extension)
 y = enrichGO(x[,8], OrgDb=org.Hs.eg.db, ont="ALL", keyType="SYMBOL", pvalueCutoff = 0.01)
 outGO = gsub(".xls", "-enrichGO.tsv", args[1])
 write.table(y@result, file=outGO, sep="\t", quote=FALSE, row.names=FALSE)
