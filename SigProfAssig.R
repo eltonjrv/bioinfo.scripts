@@ -9,7 +9,7 @@ cosmic_fit(samples="./SBScontext/", output="./SBScontext/output/", input_type='v
 ## DBS
 cosmic_fit(samples="./DBScontext/", output="./DBScontext/output/", input_type='vcf', context_type="DINUC", collapse_to_SBS96=FALSE, cosmic_version=3.3, exome=FALSE, genome_build="GRCh38")
 ## ID
-cosmic_fit(samples="./IDcontext/", output="./IDcontext/output/", input_type='vcf', context_type="ID", collapse_to_SBS96=FALSE, cosmic_version=3.4, exome=FALSE, genome_build="GRCh38")
+cosmic_fit(samples="./IDcontext/", output="./IDcontext/output/", input_type='vcf', context_type="ID", collapse_to_SBS96=FALSE, cosmic_version=3.3, exome=FALSE, genome_build="GRCh38")
 
 #### BOCA public dataset ####
 install("GRCh37", rsync=FALSE, bash=TRUE)
